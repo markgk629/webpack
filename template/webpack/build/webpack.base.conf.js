@@ -21,7 +21,7 @@ module.exports = {
   },
   resolve: {
     extensions: ['', '.js', '.vue'],
-    fallback: [path.join(__dirname, '../node_modules')],
+    fallback: [path.join(__dirname, '../../node_modules')],
     alias: {
       {{#if_eq build "standalone"}}
       'vue$': 'vue/dist/vue.common.js',
@@ -32,7 +32,7 @@ module.exports = {
     }
   },
   resolveLoader: {
-    fallback: [path.join(__dirname, '../node_modules')]
+    fallback: [path.join(__dirname, '../../node_modules')]
   },
   module: {
     {{#lint}}
