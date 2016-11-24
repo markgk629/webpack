@@ -12,7 +12,7 @@ var useCssSourceMap = cssSourceMapDev || cssSourceMapProd
 
 module.exports = {
   entry: {
-    app: './src/main.js'
+    app: './webpack/src/main.js'
   },
   output: {
     path: config.build.assetsRoot,
@@ -34,6 +34,7 @@ module.exports = {
   resolveLoader: {
     fallback: [path.join(__dirname, '../../node_modules')]
   },
+  watch: true,
   module: {
     {{#lint}}
     preLoaders: [
