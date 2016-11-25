@@ -4,7 +4,7 @@ var path = require('path')
 module.exports = {
   build: {
     env: require('./prod.env'),
-    index: path.resolve(__dirname, '../../app/views/layouts/application.html.erb'),
+    index: path.resolve(__dirname, '../../public/index.html'),
     assetsRoot: path.resolve(__dirname, '../../public'),
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
@@ -19,9 +19,7 @@ module.exports = {
   dev: {
     env: require('./dev.env'),
     port: 8080,
-    index: path.resolve(__dirname, '../../app/views/layouts/application.html.erb'),
-    assetsRoot: path.resolve(__dirname, '../../public'),
-    assetsSubDirectory: 'static-dev',
+    assetsSubDirectory: 'webpack/static',
     assetsPublicPath: '/',
     proxyTable: {},
     // CSS Sourcemaps off by default because relative paths are "buggy"
