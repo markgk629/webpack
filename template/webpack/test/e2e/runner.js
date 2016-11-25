@@ -11,7 +11,7 @@ var server = require('../../build/dev-server.js'){{#if_eq lintConfig "airbnb"}};
 // http://nightwatchjs.org/guide#settings-file
 var opts = process.argv.slice(2){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 if (opts.indexOf('--config') === -1) {
-  opts = opts.concat(['--config', 'test/e2e/nightwatch.conf.js']){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+  opts = opts.concat(['--config', 'webpack/test/e2e/nightwatch.conf.js']){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 }
 if (opts.indexOf('--env') === -1) {
   opts = opts.concat(['--env', 'chrome']){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
