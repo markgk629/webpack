@@ -2,9 +2,25 @@
 
 > {{ description }}
 
+## A Vue Webpack template forked from vuejs-templates/webpack
+
+This template is intended for use with the Rails framework.  It is inteded to separate client and server and with Rails projects initialized using the --api flag.
+
+Simply setup a new rails project
+
+```bash
+rails new vue-rails --api
+```
+Make sure you have vue-cli installed and run the following using the same project name
+
+```bash
+vue init rlafranchi/webpack vue-rails
+```
+
 ## Build Setup
 
 ``` bash
+cd vue-rails
 # install dependencies
 npm install
 

@@ -34,7 +34,6 @@ module.exports = {
   resolveLoader: {
     fallback: [path.join(__dirname, '../../node_modules')]
   },
-  watch: true,
   module: {
     {{#lint}}
     preLoaders: [
