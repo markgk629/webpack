@@ -1,6 +1,11 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <a href="https://http://rubyonrails.org/" target="_blank" title="Rails">
+      <img src="./assets/vue.png" height="50">
+    </a>
+    <a href="https://vuejs.org" target="_blank" title="Vue">
+      <img src="./assets/rails.svg" height="50">
+    </a>
     <hello></hello>
   </div>
 </template>
